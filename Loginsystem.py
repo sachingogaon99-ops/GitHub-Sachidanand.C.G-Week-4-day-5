@@ -47,7 +47,7 @@ def login():
 
 @app.route("/welcome")
 def welcome():
-    return "<h2>welcome<h2>"
+    return render_template("welcome.html") 
 
 if __name__ == "__main__":
     app.run(debug=True)
